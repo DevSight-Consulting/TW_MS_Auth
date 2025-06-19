@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: DSC-TaskWave-Authenticate
+  profiles:
+    active: dev
+  config:
+    import:
+      - classpath:config/application-dev.yml
+      - classpath:config/application-qa.yml
+      - classpath:config/application-prod.yml
